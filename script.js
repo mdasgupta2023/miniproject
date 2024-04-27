@@ -10,9 +10,10 @@ let formattedDate= new Date(inputdate.value).toLocaleDateString("en-IN");
 console.log(formattedDate);
 outputdate.value=formattedDate;
 console.log(outputdate.value)
-}}else{
+}else{
     alert('Please check the reCaptcha Box to submit the Lead');
     event.preventDefault();
+}
 }
 
 function timestamp() 
