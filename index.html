@@ -6,6 +6,7 @@
     <title>Web-To-Lead Form</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <h1>Created Lead</h1>
@@ -14,6 +15,7 @@
     onsubmit='beforesubmit()'>    
     <input type=hidden name="oid" value="00DGB000002GIqW">
     <input type=hidden name="retURL" value="https://mdasgupta2023.github.io/miniproject/thanks.html">
+    <input type=hidden name='captcha_settings' value='{"keyname":"google","fallback":"true","orgId":"00DGB000002GIqW","ts":""}'>
     <input type=hidden name="Lead_Date__c" class="outputdate">
     <label for="first_name">First Name</label>
     <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true"/><br>   
@@ -25,7 +27,8 @@
     <label for="email">Lead Date</label>
     <input type="date" required="true" class="inputdate"/>
     <!--Lead Date:<span class="dateInput dateOnlyInput"><input  id="00NGB00000OqOIa" name="00NGB00000OqOIa" size="12" type="text" /></span><br> -->
-    
+    <div class="g-recaptcha" data-sitekey="6LcC-cgpAAAAAGfSc48BJya21vs5CN0UE1F-7YD_"></div><br>
+
     <input class="submit" type="submit" name="submit">
     
     </form>
