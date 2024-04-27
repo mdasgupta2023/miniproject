@@ -42,4 +42,8 @@ form{
     padding: 25px;
 
 }
+.g-recaptcha{
+    display: flex;
+    justify-content: center;
+}
 
