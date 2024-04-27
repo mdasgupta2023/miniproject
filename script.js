@@ -1,6 +1,7 @@
 let captchachecked=false;
 console.log('coming here');
-function beforesubmit(){
+function beforesubmit(event){
+if (captchachecked){
 let outputdate= document.querySelector('.outputdate');
 let inputdate=document.querySelector('.inputdate');
 console.log(inputdate.value);//string
@@ -9,6 +10,9 @@ let formattedDate= new Date(inputdate.value).toLocaleDateString("en-IN");
 console.log(formattedDate);
 outputdate.value=formattedDate;
 console.log(outputdate.value)
+}}else{
+    alert('Please check the reCaptcha Box to submit the Lead');
+    event.preventDefault();
 }
 
 function timestamp() 
